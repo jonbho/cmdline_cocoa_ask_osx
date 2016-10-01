@@ -12,6 +12,7 @@ It just invokes `gcc` to build, including the `Cocoa` OS X framework to access t
 USAGE
 -----
 * Invoke as `cmdline_cocoa_ask_osx question explanation`, where `question` is the main text and `explanation` is the secondary text.
+Use single quotes in bash to allow spaces in the question and explanation text.
 * This will bring up a Cocoa dialog with a Yes button and a No button, and wait for the user to click on either.
 * Exit status is 0 if the user clicked Yes, or -1 if the user clicked No or any other issue happened.
 
